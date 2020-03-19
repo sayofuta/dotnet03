@@ -12,9 +12,9 @@ namespace test
         }
 
         [Theory(DisplayName = "Class01 sample_calc")]
-        [InlineData(1)]
+        //[InlineData(1)]
         [InlineData(2)]
-        [InlineData(3)]
+        //[InlineData(3)]
         public void sample_calc_Test(int num)
         {
             Assert.Equal(Example01.Class01.sample_calc(num),0);
