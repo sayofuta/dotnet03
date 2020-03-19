@@ -16,7 +16,7 @@ phases:
     commands:
       - dotnet test -o ./test_output
       - ls
-      - ls ./build_output
+      - dotnet publish -o ./build_output Example01/Example01.csproj
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker build -t $REPOSITORY_URI:latest .
