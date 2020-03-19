@@ -15,9 +15,7 @@ phases:
   build:
     commands:
       - dotnet test -o ./test_output
-      - cd Example01
-      - dotnet pulish -o ../build_output
-      - cd ../
+      - dotnet pulish -o ./build_output Example01/Program.cs
       - ls ./build_output
       - echo Build started on `date`
       - echo Building the Docker image...
